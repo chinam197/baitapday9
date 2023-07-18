@@ -1,0 +1,235 @@
+@font-face {
+    font-family: space-grotes;
+    src: url(./font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:inter;
+}
+main {
+    display: flex;
+    margin: 5px auto;
+}
+
+.wrapper-form {
+  
+    width: 600px;
+   margin-left: 200px;
+   
+}
+.form-info {
+    display: flex;
+    margin-bottom: 60px;
+    width: 600px ;
+    position: relative;
+    
+    
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 300px;
+    margin-right: 10px;
+    
+}
+
+.year {
+
+    position: absolute;
+    right: 28%;
+}
+.year > .year-milestone {
+    margin-top: 6px;
+    color: rgb(92, 91, 91);
+}
+/* thuoc tinh the con */
+.paragraph {
+    margin-bottom: 5px;
+    color: rgb(100, 100, 100);
+}
+
+
+
+.title-header {
+    margin-bottom: 10px;
+    font-family: space-grotes;
+}
+.law {
+    width: 100px;
+    height: 30px;
+    border-radius: 199px;
+    border: none;
+    margin-top: 20px;
+}
+/*  */
+
+
+
+
+
+/*  */
+.two-circle {
+    position: absolute;
+    right: 45%;
+    margin-top: 2px;
+
+}
+.two-circle >.wraper-circle {
+width: 20px;
+height: 20px;
+background-color:rgba(218, 218, 218, 0.801);
+border-radius: 99px;
+display: flex; 
+justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}
+.two-circle > .wraper-circle> .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #3d897d;
+    border-radius: 99px;
+    z-index: 1;
+    box-shadow: 0 0 1px;
+}
+
+.two-circle > .wraper-circle::after{
+    content: "";
+    border-right: 1px ;
+    height: 150px;
+    width: 1px;
+    background-color: rgba(128, 128, 128, 0.473);
+     position: absolute;
+     display: block;
+     bottom: -165px;
+}
+.not-circle-border::after {
+    content: "";
+   background-color: transparent;
+}
+.two-circle >.not-circle-border {
+    width: 20px;
+    height: 20px;
+    background-color:rgba(218, 218, 218, 0.801);
+    border-radius: 99px;
+    display: flex; 
+    justify-content: center;
+        align-items: center;
+        margin-top: 3px;
+    }
+    .two-circle > .not-circle-border> .circle {
+        width: 10px;
+        height: 10px;
+        background-color: #3d897d;
+        border-radius: 99px;
+        z-index: 1;
+        box-shadow: 0 0 1px ;
+    }
+
+
+/*  */
+.wrapper-form > .form-info:hover > .info {
+    transform: translateX(340px);
+    align-items: flex-start;
+}
+.info {
+    transition-duration: 1s ;
+}
+
+
+
+
+.wrapper-form > .form-info:hover > .year {
+transform: translateX(-130px);
+}
+.year {
+    transition-duration: 1s;
+}
+
+
+/*  */
+.info > .law:hover {
+    background-color: #a26f5a;
+    color: white;
+}
+.law {
+    font-weight: 600;
+    transition-property: color, background-color;
+    transition-duration: 1s;
+}
+
+/*  */
+.background-img {
+    width: 450px;
+    height: 500px;
+    /* background-color: rgba(128, 128, 128, 0.274); */
+    margin-top: 10px;
+    position: relative;
+    transform: translateX(20%);
+}
+.img-1 {
+    background-image: url(https://images.unsplash.com/photo-1688503677973-0c68fcc15175?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    height: 65%;
+   
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-2 {
+    background-image: url(https://images.unsplash.com/photo-1663362464067-f3e1280a9798?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+     background-repeat: no-repeat;
+     right: 0;
+     width: 70%;
+     height:65%;
+     background-size: cover;
+     position: absolute;
+     z-index: 1;
+
+
+}
+.background-color-img {
+width: 90%;
+height: 90%;
+background-color: #425baf;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: end;
+background-clip:content-box;
+
+}
+
+.wrapper-info-img {
+    margin-bottom: 35px;
+    margin-right: 20px;
+    text-align: end;
+}
+
+
+
+.number {
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+
+
+
+
+  
